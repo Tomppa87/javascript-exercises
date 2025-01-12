@@ -10,16 +10,15 @@ const books = [
   ]
 
 const getTheTitles = function(array) {
+  // create new array to store titles  
     let titles = [];
-    console.log(array)
-    for (items in array) {
-        for (key in items) {
-            console.log(key)
-        }
-        
+    
+    // loop through function input array and push object titles to created titles array
+    for (items in array) {      
+      titles.push(array[items].title)        
+      }
+    return titles    
     }
-    return titles
-};
 
 getTheTitles(books)
 
